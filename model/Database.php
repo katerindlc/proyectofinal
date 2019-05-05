@@ -35,8 +35,8 @@ class Database {
 // Una sola conexion para toda la aplicacion (singleton):
         if (null == self::$conexion) {
             try {
-             self::$conexion =  new PDO('pgsql:host=localhost;port=5433;dbname=productos', 'postgres', '12345'); 		
-             //self::$conexion =  new PDO('pgsql:host=ec2-54-204-36-249.compute-1.amazonaws.com;port=5432;dbname=d22eokasrcc2a4', 'fwrgdmkgnuxwuv', 'd574cc1b39cd919416de09c501765403fc3481805e8b41b83edd8dd6cf12e236');  
+             //self::$conexion =  new PDO('pgsql:host=localhost;port=5433;dbname=productos', 'postgres', '12345'); 		
+             self::$conexion =  new PDO('pgsql:host=ec2-54-83-205-27.compute-1.amazonaws.com;port=5432;dbname=d2e0ij1l4vtea7', 'uomyrobwbqzxxq', '78a0a157bb572ec1fa2f5f037731348534a12f448b0fc728b5fc751314ebbb13');  
              //  self::$conexion =  new PDO('pgsql:host=localhost;port=5432;dbname=productos', 'postgres', 'admin'); 
 
             } catch (PDOException $e) {
